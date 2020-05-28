@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: 'Open Sans L', sans-serif;
+    src: url(../webfonts/OpenSans-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans R', sans-serif;
+    src: url(../webfonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans SB', sans-serif;
+    src: url(../webfonts/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans EB', sans-serif;
+    src: url(../webfonts/OpenSans-Bold.ttf);
+    font-weight: 800;
+}
+
+
+body { 
+    font-family: 'Open Sans R', sans-serif;
+    color: #fff;
+}
+
+.red {
+    color: red;
+}
+
+.text-blue {
+    color: darkblue;
+}
+
+.nav-logo-wrap {
+    max-width: 150px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list li+li {
+    margin-left: 1em;
+}
+
+.cta-block {
+    background: url(../img/hero-img.png);
+    background-color: blue;
+    padding: 2em;
+}
+
+.cta-block-img {
+    max-width: 400px;
+    padding-bottom: 2em;
+}
+
+.cta-block-img img {
+    width: 100%;
+    height: auto;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.small-circle {
+    max-height: 6em;
+}
+
+.section-your-vote {
+    background-image: url(../img/lower-bg.jpg);
+    background-size: cover;
+    background-position-y: center;
+    min-height: 500px;
+    padding: 3em;
+}
