@@ -29,12 +29,33 @@ body {
     color: #fff;
 }
 
-.red {
-    color: red;
+.container-fluid {
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+nav-list a small:hover {
+    cursor: pointer;
+}
+
+.text-red {
+    color: rgb(194,19,25);
 }
 
 .text-blue {
-    color: darkblue;
+    color: rgb(15,38,43);
+}
+
+.text-grey {
+    color: #495057;
 }
 
 .nav-logo-wrap {
@@ -54,15 +75,24 @@ body {
     margin-left: 1em;
 }
 
+.nav-list small{
+    font-weight: bold;
+}
+
 .cta-block {
     background: url(../img/hero-img.png);
-    background-color: blue;
-    padding: 2em;
+    background-color: rgb(15,38,43);
+    padding: .875rem;
+    background-repeat: no-repeat;
+    background-position-x: -2%;
+    background-size: 330px;
+    background-position-y: center;
+
 }
 
 .cta-block-img {
-    max-width: 400px;
-    padding-bottom: 2em;
+    max-width: 20rem;
+    padding-bottom: .875rem;
 }
 
 .cta-block-img img {
@@ -70,18 +100,89 @@ body {
     height: auto;
 }
 
+.testimonials-quote {
+    position: relative;
+}
+
+.testimonials-quote::before {
+    content: open-quote;
+    color: rgb(194,19,25);
+    position: absolute;
+    top: -.5em;
+    left: 0;
+    font-size: 100px;
+    opacity: .25;
+}
+
+.testimonials-quote::after {
+    content: close-quote;
+    color: rgb(194,19,25);
+    position: absolute;
+    bottom: -.25em;
+    right: .5em;
+    font-size: 100px;
+    opacity: .25;
+}
+
+.testimonials-quote-text {
+    font-size: 1.2rem;
+}
+
 .circle {
     border-radius: 50%;
 }
 
 .small-circle {
-    max-height: 6em;
+    max-width: 8em;
+}
+
+.smaller-testimonial {
+    font-size: .75rem;
 }
 
 .section-your-vote {
     background-image: url(../img/lower-bg.jpg);
     background-size: cover;
     background-position-y: center;
-    min-height: 500px;
-    padding: 3em;
+    padding: 2.5rem;
+}
+
+.form-control {
+    font-size: .75rem;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    width: 33%;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: 700;
+    background: rgb(15,38,43);
+    border-color: rgb(15,38,43);
+}
+
+.btn-submit:hover {
+    background: #fff;
+    color: rgb(15,38,43);
+    border-color: rgb(15,38,43);
+    transition: 0.2 ease-in-out all;
+}
+
+hr {
+    border-top: 2px solid rgba(0,0,0,.1);
+    width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-info-list li {
+        display: inline;
+        position: relative;
+    }
+    .contact-info-list li:nth-last-child(1)::before {
+        content: "|";
+        margin-right: .25rem;
+    }
+
+
 }
