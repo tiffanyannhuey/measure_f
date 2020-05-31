@@ -34,12 +34,7 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
     font-weight: 100;
-}
-
-h2 {
-    font-size: 1.25rem;
 }
 
 nav-list a small:hover {
@@ -59,7 +54,7 @@ nav-list a small:hover {
 }
 
 .nav-logo-wrap {
-    max-width: 150px;
+    max-width: 14rem;
 }
 
 .image {
@@ -80,19 +75,20 @@ nav-list a small:hover {
 }
 
 .cta-block {
-    background: url(../img/hero-img.png);
+    background-image: url(../svg/Dark_Background/Logo-Icon.svg);
     background-color: rgb(15,38,43);
-    padding: .875rem;
+    padding: 1rem;
     background-repeat: no-repeat;
-    background-position-x: -2%;
-    background-size: 330px;
+    background-position-x: 4%;
+    background-size: 29rem;
     background-position-y: center;
+    font-family: 'Open Sans L', sans-serif;
 
 }
 
 .cta-block-img {
-    max-width: 20rem;
-    padding-bottom: .875rem;
+    max-width: 27rem;
+    padding-bottom: 2rem;
 }
 
 .cta-block-img img {
@@ -108,9 +104,9 @@ nav-list a small:hover {
     content: open-quote;
     color: rgb(194,19,25);
     position: absolute;
-    top: -.5em;
-    left: 0;
-    font-size: 100px;
+    top: -103px;
+    left: -45px;
+    font-size: 14rem;
     opacity: .25;
 }
 
@@ -118,9 +114,9 @@ nav-list a small:hover {
     content: close-quote;
     color: rgb(194,19,25);
     position: absolute;
-    bottom: -.25em;
-    right: .5em;
-    font-size: 100px;
+    bottom: -137px;
+    right: .775em;
+    font-size: 14rem;
     opacity: .25;
 }
 
@@ -128,12 +124,27 @@ nav-list a small:hover {
     font-size: 1.2rem;
 }
 
+img-wrap {
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+img-wrap img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+}
+
+img-wrap:hover img {
+    transform: scale(1.5);
+}
+
 .circle {
     border-radius: 50%;
 }
 
 .small-circle {
-    max-width: 8em;
+    max-width: 11rem;
 }
 
 .smaller-testimonial {
@@ -147,18 +158,22 @@ nav-list a small:hover {
     padding: 2.5rem;
 }
 
+.section-your-vote .container p {
+    font-size: 1.5rem;
+}
+
 .form-control {
-    font-size: .75rem;
+    height: calc(2.5em + .75rem + 2px);
 }
 
 .btn-submit {
     text-transform: uppercase;
     width: 33%;
     border-radius: 20px;
-    font-size: small;
     font-weight: 700;
     background: rgb(15,38,43);
     border-color: rgb(15,38,43);
+    line-height: 2;
 }
 
 .btn-submit:hover {
@@ -179,10 +194,19 @@ hr {
         display: inline;
         position: relative;
     }
-    .contact-info-list li:nth-last-child(1)::before {
-        content: "|";
-        margin-right: .25rem;
+
+    .contact-info-list li + li 
+    {
+        margin-left: 1rem;
     }
 
+    .contact-info-list li:nth-last-child(1)::before {
+        content: "|";
+        margin-right: .5rem;
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: -.75rem;
+        top: -6px;
+    }
 
 }
